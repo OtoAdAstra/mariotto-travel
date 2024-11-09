@@ -1,0 +1,30 @@
+:root {
+  --large: 32px;
+  --medium: 24px;
+  --small: 18px;
+
+  --black: #464242;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: var(--small);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+  color: var(--black);
+  font-size: var(--small);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+}

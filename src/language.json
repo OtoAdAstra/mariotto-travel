@@ -1,0 +1,31 @@
+{
+  "ge": {
+    "nav": {
+      "tours": "ტურები",
+      "about": "ჩვენს შესახებ",
+      "contact": "კონტაქტი",
+      "language": "ენა",
+      "eng": "ინგლისური",
+      "ge": "ქართული"
+    },
+    "search": {
+      "country": "სად?",
+      "date": "ფასი?"
+    }
+  },
+
+  "en": {
+    "nav": {
+      "tours": "Tours",
+      "about": "About us",
+      "contact": "Contact us",
+      "language": "Language",
+      "eng": "English",
+      "ge": "Georgian"
+    },
+    "search": {
+      "country": "Where?",
+      "date": "Price?"
+    }
+  }
+}

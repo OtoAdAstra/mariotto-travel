@@ -1,0 +1,63 @@
+@keyframes left-to-right {
+  0% {
+    transform: translateX(1500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.burger-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 150px 0 0 0;
+  background-image: url("/src/assets/maldives-navbar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: left-to-right 0.3s ease;
+}
+.burger-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  z-index: 1;
+}
+
+.burger-nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.burger-nav li {
+  cursor: pointer;
+}
+
+.burger-link {
+  z-index: 99;
+  font-size: var(--middle);
+  color: aliceblue;
+  margin: 40px 0;
+  padding: 0 0 5px 0;
+  font-weight: 600;
+  border-bottom: 1px solid aliceblue;
+}
+
+.language-switch {
+  color: aliceblue;
+  z-index: 222;
+  position: fixed;
+  bottom: 70px;
+}
