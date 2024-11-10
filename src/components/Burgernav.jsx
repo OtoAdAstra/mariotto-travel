@@ -1,8 +1,10 @@
 import "./components-css/Burgernav.css";
 import language from "../language.json";
+import LangChanger from "../LangChanger";
 
 // eslint-disable-next-line react/prop-types
-export default function Burgernav({ lang, langToEng, langToGe }) {
+export default function Burgernav() {
+  const { lang, langToEng, langToGe } = LangChanger();
   return (
     <nav className="burger-nav">
       <ul>

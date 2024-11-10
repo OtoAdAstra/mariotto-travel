@@ -3,15 +3,16 @@
   --medium: 24px;
   --small: 18px;
 
-  --black: #464242;
+  --black: #000000;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: aliceblue;
+  background-color: rgb(198, 228, 255);
   width: 100%;
   overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {

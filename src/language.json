@@ -1,5 +1,11 @@
 {
   "ge": {
+    "select": "აირჩიეთ...",
+    "cities": [
+      { "value": "tbilisi", "label": "თბილისი" },
+      { "value": "batumi", "label": "ბათუმი" },
+      { "value": "kutaisi", "label": "ქუთაისი" }
+    ],
     "nav": {
       "tours": "ტურები",
       "about": "ჩვენს შესახებ",
@@ -15,6 +21,12 @@
   },
 
   "en": {
+    "select": "Select...",
+    "cities": [
+      { "value": "tbilisi", "label": "Tbilisi" },
+      { "value": "batumi", "label": "Batumi" },
+      { "value": "kutaisi", "label": "Kutaisi" }
+    ],
     "nav": {
       "tours": "Tours",
       "about": "About us",

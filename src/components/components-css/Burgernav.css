@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: left-to-right 0.3s ease;
+  z-index: 22;
 }
 .burger-nav::before {
   content: "";

@@ -6,24 +6,18 @@ import { useState, useEffect } from "react";
 import Flag from "react-flagkit";
 import Hamburger from "hamburger-react";
 import Burgernav from "./Burgernav";
+import LangChanger from "../LangChanger";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
   //Language settings
   const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const [lang, setLang] = useState("ge");
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
   };
 
-  const langToEng = () => {
-    setLang("en");
-  };
-
-  const langToGe = () => {
-    setLang("ge");
-  };
+  const { lang, langToEng, langToGe } = LangChanger();
 
   //Mobile settings
   function useWindowWidth() {
@@ -40,7 +34,7 @@ export default function Navbar() {
   }
 
   const windowWidth = useWindowWidth();
-  const isSmall = windowWidth <= 900;
+  const isSmall = windowWidth <= 985;
 
   return (
     <>
