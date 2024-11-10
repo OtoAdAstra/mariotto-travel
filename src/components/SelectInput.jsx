@@ -2,9 +2,9 @@ import Select from "react-select";
 
 export default function SelectInput() {
   const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
+    { value: "dubai", label: "Dubai | UAE" },
+    { value: "barcelona", label: "Barcelona | ESP" },
+    { value: "rome", label: "Rome | ITA" },
   ];
 
   const customStyles = {
