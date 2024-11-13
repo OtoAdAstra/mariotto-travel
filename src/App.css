@@ -9,10 +9,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(198, 228, 255);
+  background-color: aliceblue;
   width: 100%;
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {

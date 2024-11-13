@@ -7,7 +7,7 @@
   position: relative;
   width: calc(100% - 40px);
   height: 350px;
-  border: 1px solid black;
+  border: 1px solid cccccc;
   border-radius: 50px;
 }
 
@@ -16,10 +16,10 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50px;
-  filter: brightness(90%) blur(3px);
   position: absolute;
   display: "block";
   z-index: -1;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 .search-bar-div-two {

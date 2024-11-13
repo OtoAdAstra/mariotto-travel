@@ -40,8 +40,16 @@ export default function Navbar() {
     <>
       <nav>
         <div className="first-nav">
-          <GiIsland className="logo-icon" />
-          <span className="logo-text">Mariotto</span>
+          <span className="logo-text">
+            Mari
+            <span
+              style={{
+                color: "red",
+              }}>
+              otto{" "}
+            </span>
+            travel
+          </span>
         </div>
         {isSmall ? (
           <div className={`hamburger-container ${isOpen ? "open" : ""}`}>
@@ -89,9 +97,7 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-      {isOpen && (
-        <Burgernav lang={lang} langToEng={langToEng} langToGe={langToGe} />
-      )}
+      {isOpen && <Burgernav />}
     </>
   );
 }

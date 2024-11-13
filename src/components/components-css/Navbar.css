@@ -20,22 +20,15 @@ nav {
 
 .logo-text {
   font-family: "Playwrite GB S", cursive;
-  font-weight: 500;
+  font-weight: 800;
 
   font-size: var(--medium);
-  color: #464242;
+  color: #000000;
   cursor: default;
 
   user-select: none; /* For most modern browsers */
   -webkit-user-select: none; /* For Safari */
   -moz-user-select: none; /* For Firefox */
-}
-
-.logo-icon {
-  padding: 0;
-  font-size: 36px;
-  margin-right: 20px;
-  color: var(--black);
 }
 
 .second-nav {

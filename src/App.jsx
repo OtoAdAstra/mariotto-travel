@@ -15,6 +15,8 @@ function App() {
           fontSize: "16px",
           left: "50%",
           transform: "translateX(-50%)",
+          textAlign: "center",
+          color: "rgba(0, 0, 0, 0.416)",
         }}>
         copyright © 2024 all rights reserved
       </span>

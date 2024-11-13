@@ -1,0 +1,22 @@
+"filename", "language", "JSON", "HTML", "Markdown", "JavaScript JSX", "JavaScript", "CSS", "comment", "blank", "total"
+"c:\Users\sharv\Desktop\Codes\mariotto\README.md", "Markdown", 0, 0, 5, 0, 0, 0, 0, 4, 9
+"c:\Users\sharv\Desktop\Codes\mariotto\eslint.config.js", "JavaScript", 0, 0, 0, 0, 37, 0, 0, 2, 39
+"c:\Users\sharv\Desktop\Codes\mariotto\index.html", "HTML", 0, 12, 0, 0, 0, 0, 0, 1, 13
+"c:\Users\sharv\Desktop\Codes\mariotto\package-lock.json", "JSON", 4342, 0, 0, 0, 0, 0, 0, 1, 4343
+"c:\Users\sharv\Desktop\Codes\mariotto\package.json", "JSON", 32, 0, 0, 0, 0, 0, 0, 1, 33
+"c:\Users\sharv\Desktop\Codes\mariotto\src\App.css", "CSS", 0, 0, 0, 0, 0, 27, 0, 5, 32
+"c:\Users\sharv\Desktop\Codes\mariotto\src\App.jsx", "JavaScript JSX", 0, 0, 0, 25, 0, 0, 0, 3, 28
+"c:\Users\sharv\Desktop\Codes\mariotto\src\LangChanger.jsx", "JavaScript JSX", 0, 0, 0, 11, 0, 0, 0, 4, 15
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\Burgernav.jsx", "JavaScript JSX", 0, 0, 0, 22, 0, 0, 1, 2, 25
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\Home.jsx", "JavaScript JSX", 0, 0, 0, 8, 0, 0, 0, 2, 10
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\Navbar.jsx", "JavaScript JSX", 0, 0, 0, 83, 0, 0, 2, 11, 96
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\Search.jsx", "JavaScript JSX", 0, 0, 0, 41, 0, 0, 1, 4, 46
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\SelectInput.jsx", "JavaScript JSX", 0, 0, 0, 44, 0, 0, 5, 7, 56
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\components-css\Burgernav.css", "CSS", 0, 0, 0, 0, 0, 59, 0, 6, 65
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\components-css\Loader.css", "CSS", 0, 0, 0, 0, 0, 27, 1, 2, 30
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\components-css\Navbar.css", "CSS", 0, 0, 0, 0, 0, 100, 0, 21, 121
+"c:\Users\sharv\Desktop\Codes\mariotto\src\components\components-css\Search.css", "CSS", 0, 0, 0, 0, 0, 61, 0, 10, 71
+"c:\Users\sharv\Desktop\Codes\mariotto\src\language.json", "JSON", 42, 0, 0, 0, 0, 0, 0, 2, 44
+"c:\Users\sharv\Desktop\Codes\mariotto\src\main.jsx", "JavaScript JSX", 0, 0, 0, 4, 0, 0, 0, 2, 6
+"c:\Users\sharv\Desktop\Codes\mariotto\vite.config.js", "JavaScript", 0, 0, 0, 0, 5, 0, 1, 2, 8
+"Total", "-", 4416, 12, 5, 238, 42, 274, 11, 92, 5090
