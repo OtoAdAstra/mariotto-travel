@@ -55,10 +55,3 @@
   font-weight: 600;
   border-bottom: 1px solid aliceblue;
 }
-
-.language-switch {
-  color: aliceblue;
-  z-index: 222;
-  position: fixed;
-  bottom: 70px;
-}

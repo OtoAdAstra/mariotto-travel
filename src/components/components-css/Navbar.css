@@ -54,60 +54,6 @@ nav {
   border-bottom: 2px solid var(--black);
 }
 
-.lang-changer-div {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.lang-changer {
-  padding: 0 0 10px 0;
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: -100px;
-  animation: dropdownAnimation 0.3s ease forwards;
-  padding: 15px 10px 15px 0;
-  border: 1px solid var(--black);
-  border-radius: 10px;
-  justify-content: center;
-}
-
-.dropdown-menu span {
-  text-decoration: none;
-  color: var(--black);
-  font-size: var(--small);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  cursor: pointer;
-  transition: 1s ease-in;
-}
-
-#lang-one:hover {
-  background: linear-gradient(90deg, #ff0000, #0000ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#lang-two:hover {
-  background: linear-gradient(90deg, #ff0000, #aaaaaa, #ff0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.flag {
-  padding: 10px 0px 10px 20px;
-  display: flex;
-}
-
-.flag-icon {
-  padding: 0 5px 0 0;
-}
-
 .hamburger-react {
   z-index: 999;
 }
