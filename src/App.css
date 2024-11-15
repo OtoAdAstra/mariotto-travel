@@ -6,12 +6,18 @@
   --black: #000000;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
   padding: 0;
   background-color: aliceblue;
   width: 100%;
-  overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }

@@ -1,4 +1,3 @@
-import { GiIsland } from "react-icons/gi";
 import "./components-css/Navbar.css";
 import language from "../language.json";
 import { HiChevronDown } from "react-icons/hi";
@@ -7,8 +6,10 @@ import Flag from "react-flagkit";
 import Hamburger from "hamburger-react";
 import Burgernav from "./Burgernav";
 import LangChanger from "../LangChanger";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
   const [isOpen, setOpen] = useState(false);
   //Language settings
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -40,16 +41,18 @@ export default function Navbar() {
     <>
       <nav>
         <div className="first-nav">
-          <span className="logo-text">
-            Mari
-            <span
-              style={{
-                color: "red",
-              }}>
-              otto{" "}
+          <Link to="/">
+            <span className="logo-text">
+              Mari
+              <span
+                style={{
+                  color: "red",
+                }}>
+                otto
+              </span>
+              travel
             </span>
-            travel
-          </span>
+          </Link>
         </div>
         {isSmall ? (
           <div className={`hamburger-container ${isOpen ? "open" : ""}`}>
@@ -58,14 +61,47 @@ export default function Navbar() {
         ) : (
           <div className="second-nav">
             <ul>
-              <li className="nav-a-hover">
-                <a href="">{language[lang].nav.tours}</a>
+              <li
+                className={` ${
+                  location.pathname === "/tours" ? "no-hover" : "nav-a-hover"
+                }`}
+                style={{
+                  borderBottom:
+                    location.pathname === "/tours"
+                      ? "2px solid var(--black)"
+                      : "none",
+                }}>
+                <Link to="/" href="">
+                  {language[lang].nav.tours}
+                </Link>
               </li>
-              <li className="nav-a-hover">
-                <a href="">{language[lang].nav.about}</a>
+              <li
+                className={` ${
+                  location.pathname === "/about-us" ? "no-hover" : "nav-a-hover"
+                }`}
+                style={{
+                  borderBottom:
+                    location.pathname === "/about-us"
+                      ? "2px solid var(--black)"
+                      : "none",
+                }}>
+                <Link to="/about-us" href="">
+                  {language[lang].nav.about}
+                </Link>
               </li>
-              <li className="nav-a-hover">
-                <a href="">{language[lang].nav.contact}</a>
+              <li
+                className={` ${
+                  location.pathname === "/contact" ? "no-hover" : "nav-a-hover"
+                }`}
+                style={{
+                  borderBottom:
+                    location.pathname === "/contact"
+                      ? "2px solid var(--black)"
+                      : "none",
+                }}>
+                <Link to="/" href="">
+                  {language[lang].nav.contact}
+                </Link>
               </li>
 
               <li
@@ -97,7 +133,7 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-      {isOpen && <Burgernav />}
+      {isOpen && <Burgernav setOpen={setOpen} />}
     </>
   );
 }

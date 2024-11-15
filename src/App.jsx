@@ -1,26 +1,40 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Aboutus from "./components/Aboutus";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <span
+    <Router>
+      <div
         style={{
-          position: "absolute",
-          bottom: "30px",
-          fontWeight: "600",
-          fontSize: "16px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          textAlign: "center",
-          color: "rgba(0, 0, 0, 0.416)",
+          flex: "1",
+          minHeight: "95vh",
         }}>
-        copyright © 2024 all rights reserved
-      </span>
-    </>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about-us" element={<Aboutus />} />
+        </Routes>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+        <span
+          style={{
+            fontWeight: "600",
+            fontSize: "16px",
+            color: "rgba(0, 0, 0, 0.416)",
+          }}>
+          copyright © 2024 all rights reserved
+        </span>
+      </div>
+    </Router>
   );
 }
 

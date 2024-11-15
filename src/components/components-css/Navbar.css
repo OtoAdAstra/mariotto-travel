@@ -24,7 +24,7 @@ nav {
 
   font-size: var(--medium);
   color: #000000;
-  cursor: default;
+  cursor: pointer;
 
   user-select: none; /* For most modern browsers */
   -webkit-user-select: none; /* For Safari */
@@ -46,7 +46,11 @@ nav {
 }
 
 .nav-a-hover a:hover {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--black);
+}
+
+.no-hover:hover {
   border-bottom: 2px solid var(--black);
 }
 
