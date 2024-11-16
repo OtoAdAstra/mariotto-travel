@@ -26,14 +26,14 @@ export default function Search() {
                 type="text"
                 onChange={(e) => handleChange(e, setMinValue)}
                 value={minValue}
-                placeholder="Min. ₾"
+                placeholder="მინ. ₾"
                 className="numbers"></input>
               <span id="tire">-</span>
               <input
                 type="text"
                 onChange={(e) => handleChange(e, setMaxValue)}
                 value={maxValue}
-                placeholder="Max. ₾"
+                placeholder="მაქს. ₾"
                 className="numbers"></input>
             </div>
             <IoSearchCircle className="search-button" />

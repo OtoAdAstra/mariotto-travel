@@ -2,9 +2,12 @@ import Select from "react-select";
 
 export default function SelectInput() {
   const options = [
-    { value: "dubai", label: "Dubai | დუბაი" },
-    { value: "barcelona", label: "Barcelona | ბარსელონა" },
-    { value: "rome", label: "Rome | რომი" },
+    { value: "maldives", label: "მალდივები" },
+    { value: "dubai", label: "დუბაი" },
+    { value: "barcelona", label: "ბარსელონა" },
+    { value: "madrid", label: "მადრიდი" },
+    { value: "rome", label: "რომი" },
+    { value: "milan", label: "მილანი" },
   ];
 
   const customStyles = {
@@ -51,5 +54,11 @@ export default function SelectInput() {
     }),
   };
 
-  return <Select options={options} styles={customStyles} />;
+  return (
+    <Select
+      options={options}
+      styles={customStyles}
+      placeholder="აირჩიე ქალაქი..."
+    />
+  );
 }

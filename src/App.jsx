@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about-us" element={<Aboutus />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </div>
 
@@ -29,7 +31,7 @@ function App() {
           style={{
             fontWeight: "600",
             fontSize: "16px",
-            color: "rgba(0, 0, 0, 0.416)",
+            color: "rgba(0, 0, 0, 0.256)",
           }}>
           copyright © 2024 all rights reserved
         </span>

@@ -1,24 +1,12 @@
 import "./components-css/Navbar.css";
-import language from "../language.json";
-import { HiChevronDown } from "react-icons/hi";
 import { useState, useEffect } from "react";
-import Flag from "react-flagkit";
 import Hamburger from "hamburger-react";
 import Burgernav from "./Burgernav";
-import LangChanger from "../LangChanger";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
   const [isOpen, setOpen] = useState(false);
-  //Language settings
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible);
-  };
-
-  const { lang, langToEng, langToGe } = LangChanger();
 
   //Mobile settings
   function useWindowWidth() {
@@ -48,7 +36,7 @@ export default function Navbar() {
                 style={{
                   color: "red",
                 }}>
-                otto
+                otto&nbsp;
               </span>
               travel
             </span>
@@ -66,13 +54,14 @@ export default function Navbar() {
                   location.pathname === "/tours" ? "no-hover" : "nav-a-hover"
                 }`}
                 style={{
+                  paddingBottom: "8px",
                   borderBottom:
                     location.pathname === "/tours"
                       ? "2px solid var(--black)"
                       : "none",
                 }}>
-                <Link to="/" href="">
-                  {language[lang].nav.tours}
+                <Link to="/tours" href="">
+                  ტურები
                 </Link>
               </li>
               <li
@@ -80,13 +69,14 @@ export default function Navbar() {
                   location.pathname === "/about-us" ? "no-hover" : "nav-a-hover"
                 }`}
                 style={{
+                  paddingBottom: "8px",
                   borderBottom:
                     location.pathname === "/about-us"
                       ? "2px solid var(--black)"
                       : "none",
                 }}>
                 <Link to="/about-us" href="">
-                  {language[lang].nav.about}
+                  ჩვენს შესახებ
                 </Link>
               </li>
               <li
@@ -94,40 +84,15 @@ export default function Navbar() {
                   location.pathname === "/contact" ? "no-hover" : "nav-a-hover"
                 }`}
                 style={{
+                  paddingBottom: "8px",
                   borderBottom:
                     location.pathname === "/contact"
                       ? "2px solid var(--black)"
                       : "none",
                 }}>
-                <Link to="/" href="">
-                  {language[lang].nav.contact}
+                <Link to="/contact" href="">
+                  კონტაქტი
                 </Link>
-              </li>
-
-              <li
-                className="lang-changer-div"
-                onMouseEnter={toggleDropdown}
-                onMouseLeave={toggleDropdown}>
-                <span className="lang-changer">
-                  {language[lang].nav.language}
-                  <HiChevronDown />
-                </span>
-                {isDropdownVisible && (
-                  <div className="dropdown-menu">
-                    <div className="flag">
-                      <Flag country="US" className="flag-icon" />
-                      <span onClick={langToEng} id="lang-one">
-                        {language[lang].nav.eng}
-                      </span>
-                    </div>
-                    <div className="flag">
-                      <Flag country="GE" className="flag-icon" />
-                      <span onClick={langToGe} id="lang-two">
-                        {language[lang].nav.ge}
-                      </span>
-                    </div>
-                  </div>
-                )}
               </li>
             </ul>
           </div>
