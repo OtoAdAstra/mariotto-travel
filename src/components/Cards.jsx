@@ -10,7 +10,7 @@ export default function Cards({ img, place, price, days }) {
       </div>
       <h3 className="card-place">{place}</h3>
       <h4 className="card-days">({days} დღე)</h4>
-      <h5 className="card-price">{price}</h5>
+      <h5 className="card-price">{price} ₾</h5>
       <Link to="/contact">
         <IoIosCall className="call" />
       </Link>
