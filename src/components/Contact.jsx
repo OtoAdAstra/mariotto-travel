@@ -29,10 +29,12 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex flex-col justify-around pt-7 [@media(max-width:430px)]:flex-row">
-          <a href="">
+          <a
+            href="https://www.facebook.com/profile.php?id=100052579368402"
+            target="_blank">
             <FaFacebook className="text-5xl text-[#1877F2]" />
           </a>
-          <a href="" className="">
+          <a href="https://www.tiktok.com/@mariotto727" target="_blank">
             <FaTiktok className="text-5xl text-[#ff0050]" />
           </a>
         </div>

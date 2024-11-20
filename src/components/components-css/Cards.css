@@ -1,0 +1,73 @@
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(30deg); /* Rotate right */
+  }
+  10% {
+    transform: rotate(-30deg); /* Rotate left */
+  }
+  15% {
+    transform: rotate(30deg); /* Rotate right again */
+  }
+
+  20%,
+  50%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.card-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.card-div * {
+  margin: 0 0 5px 0;
+}
+
+.img-div {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 17px 17px 0 0;
+}
+
+.card-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 17px 17px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+}
+
+.card-place {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-price {
+  font-weight: 500;
+}
+
+.call {
+  font-size: 28px;
+  margin: 15px 0;
+  color: rgb(18, 133, 18);
+  animation: shake 0.5s ease-in-out infinite;
+  animation-duration: 3s;
+}
