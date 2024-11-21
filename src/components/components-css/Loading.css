@@ -1,0 +1,28 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #00ccff 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #02eeff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.loader-position {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 9;
+}

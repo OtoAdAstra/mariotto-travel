@@ -12,7 +12,7 @@ function App() {
       <div
         style={{
           flex: "1",
-          minHeight: "95vh",
+          minHeight: "90vh",
         }}>
         <Navbar />
         <Routes>
@@ -28,6 +28,7 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          marginTop: "7vh",
         }}>
         <span
           style={{
