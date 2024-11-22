@@ -1,7 +1,7 @@
 import Select from "react-select";
 import React from "react";
 
-export default function SelectInput() {
+export default function SelectInput({ onChange }) {
   const options = [
     { value: "maldives", label: "მალდივები" },
     { value: "dubai", label: "დუბაი" },
@@ -59,6 +59,7 @@ export default function SelectInput() {
     <Select
       options={options}
       styles={customStyles}
+      onChange={onChange}
       placeholder="აირჩიე ქალაქი..."
     />
   );

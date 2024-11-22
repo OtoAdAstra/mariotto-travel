@@ -1,50 +1,44 @@
 [
   {
     "place": "მალდივები",
+    "value": "maldives",
     "price": 2500,
     "days": 9,
     "img": "maldives.jpg"
   },
   {
-    "place": "ბარსელონა",
-    "price": 2000,
-    "days": 7,
+    "place": "მალდივები",
+    "value": "maldives",
+    "price": 2500,
+    "days": 9,
     "img": "maldives.jpg"
   },
   {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
+    "place": "მალდივები",
+    "value": "maldives",
+    "price": 2500,
+    "days": 9,
     "img": "maldives.jpg"
   },
   {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
+    "place": "მალდივები",
+    "value": "maldives",
+    "price": 2500,
+    "days": 9,
     "img": "maldives.jpg"
   },
   {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
+    "place": "მალდივები",
+    "value": "maldives",
+    "price": 2500,
+    "days": 9,
     "img": "maldives.jpg"
   },
   {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
-    "img": "maldives.jpg"
-  },
-  {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
-    "img": "maldives.jpg"
-  },
-  {
-    "place": "დუბაი",
-    "price": 1500,
-    "days": 8,
+    "place": "რომი",
+    "value": "rome",
+    "price": 2500,
+    "days": 9,
     "img": "maldives.jpg"
   }
 ]

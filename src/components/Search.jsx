@@ -2,11 +2,31 @@ import "./components-css/Search.css";
 import SelectInput from "./SelectInput";
 import { useState } from "react";
 import { IoSearchCircle } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 import "./components-css/Loader.css";
 
 export default function Search() {
   const [minValue, setMinValue] = useState("");
   const [maxValue, setMaxValue] = useState("");
+  const [selectedCity, setSelectedCity] = useState(""); // Correct placement
+
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    // Validate inputs
+    if (!minValue && !maxValue && !selectedCity) {
+      alert("აირჩიეთ ერთი პარამეტრი მაინც");
+      return;
+    }
+    // Navigate to the new page and pass filter parameters as query params
+    const queryParams = new URLSearchParams({
+      minPrice: minValue.replace(" ₾", ""),
+      maxPrice: maxValue.replace(" ₾", ""),
+      city: selectedCity,
+    }).toString();
+
+    navigate(`/filtered-results?${queryParams}`);
+  };
 
   const handleChange = (e, setFunction) => {
     // Remove any non-digit characters
@@ -18,9 +38,12 @@ export default function Search() {
     <>
       <div className="search-div">
         <div className="search-bar-div">
-          <img id="search-img" />
+          <img id="search-img" alt="" />
           <div className="search-bar-div-two">
-            <SelectInput />
+            <SelectInput
+              onChange={(option) => setSelectedCity(option ? option.value : "")}
+            />
+
             <div className="search-price-div">
               <input
                 type="text"
@@ -36,7 +59,7 @@ export default function Search() {
                 placeholder="მაქს. ₾"
                 className="numbers"></input>
             </div>
-            <IoSearchCircle className="search-button" />
+            <IoSearchCircle className="search-button" onClick={handleSearch} />
           </div>
         </div>
       </div>

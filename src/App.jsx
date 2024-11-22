@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Contact from "./components/Contact";
 import Tours from "./components/Tours";
+import FilteredResults from "./components/FilteredResults";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/about-us" element={<Aboutus />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/tours" element={<Tours />} />
+          <Route path="/filtered-results" element={<FilteredResults />} />
         </Routes>
       </div>
 
