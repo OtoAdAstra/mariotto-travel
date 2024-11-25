@@ -1,6 +1,6 @@
 # Mariotto travel
 
-###### Travel company webpage :fa-plane:
+###### Travel company webpage :airplane:
 
 
 #### Technologies and Frameworks used:
