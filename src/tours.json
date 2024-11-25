@@ -7,38 +7,80 @@
     "img": "maldives.jpg"
   },
   {
-    "place": "მალდივები",
-    "value": "maldives",
-    "price": 2500,
-    "days": 9,
-    "img": "maldives.jpg"
+    "place": "დუბაი",
+    "value": "dubai",
+    "price": 1200,
+    "days": 7,
+    "img": "dubai.jpg"
   },
   {
-    "place": "მალდივები",
-    "value": "maldives",
-    "price": 2500,
-    "days": 9,
-    "img": "maldives.jpg"
+    "place": "ბარსელონა",
+    "value": "barcelona",
+    "price": 1700,
+    "days": 8,
+    "img": "barcelona.jpg"
   },
   {
-    "place": "მალდივები",
-    "value": "maldives",
-    "price": 2500,
-    "days": 9,
-    "img": "maldives.jpg"
-  },
-  {
-    "place": "მალდივები",
-    "value": "maldives",
-    "price": 2500,
-    "days": 9,
-    "img": "maldives.jpg"
+    "place": "მადრიდი",
+    "value": "madrid",
+    "price": 1000,
+    "days": 4,
+    "img": "madrid.jpg"
   },
   {
     "place": "რომი",
     "value": "rome",
-    "price": 2500,
-    "days": 9,
+    "price": 1400,
+    "days": 6,
+    "img": "rome.jpg"
+  },
+  {
+    "place": "მილანი",
+    "value": "milan",
+    "price": 1400,
+    "days": 6,
+    "img": "milan.jpg"
+  },
+  {
+    "place": "მალდივები",
+    "value": "maldives",
+    "price": 2800,
+    "days": 10,
     "img": "maldives.jpg"
+  },
+  {
+    "place": "დუბაი",
+    "value": "dubai",
+    "price": 1600,
+    "days": 9,
+    "img": "dubai.jpg"
+  },
+  {
+    "place": "ბარსელონა",
+    "value": "barcelona",
+    "price": 1500,
+    "days": 5,
+    "img": "barcelona.jpg"
+  },
+  {
+    "place": "მადრიდი",
+    "value": "madrid",
+    "price": 1600,
+    "days": 8,
+    "img": "madrid.jpg"
+  },
+  {
+    "place": "რომი",
+    "value": "rome",
+    "price": 1700,
+    "days": 9,
+    "img": "rome.jpg"
+  },
+  {
+    "place": "მილანი",
+    "value": "milan",
+    "price": 1900,
+    "days": 10,
+    "img": "milan.jpg"
   }
 ]
