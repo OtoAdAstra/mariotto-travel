@@ -2,7 +2,6 @@
 
 ###### Travel company webpage :fa-plane:
 
-[========]
 
 #### Technologies and Frameworks used:
 
