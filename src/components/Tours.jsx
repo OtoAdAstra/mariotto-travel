@@ -6,44 +6,38 @@ import { useState, useEffect } from "react";
 // Dynamically import images using import.meta.glob
 const images = import.meta.glob("../assets/*", { eager: true });
 
-// Function to load tours data asynchronously
-export async function fetchToursData() {
-  // Export the function
-  try {
-    const data = await import("../tours.json");
-
-    // Map data to include resolved image paths
-    return data.default.map((tour) => ({
-      ...tour,
-      img:
-        images[`../assets/${tour.img}`]?.default ||
-        images[`../assets/${tour.img}`],
-    }));
-  } catch (error) {
-    console.error("Failed to load tours data:", error);
-    throw error;
-  }
-}
-
 export default function Tours() {
   const [tours, setTours] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); // State to track loading status
 
+  // Function to load tours data asynchronously
+  const fetchToursData = async () => {
+    try {
+      // Dynamically import the tours.json
+      const data = await import("../tours.json");
+
+      // Map data to include resolved image paths
+      const updatedTours = data.default.map((tour) => ({
+        ...tour,
+        img:
+          images[`../assets/${tour.img}`]?.default ||
+          images[`../assets/${tour.img}`],
+      }));
+
+      setTours(updatedTours);
+    } catch (error) {
+      console.error("Failed to load tours data:", error);
+    } finally {
+      setIsLoading(false); // Stop loading once data is fetched
+    }
+  };
+
+  // Use useEffect to fetch data on component mount
   useEffect(() => {
-    const loadTours = async () => {
-      try {
-        const updatedTours = await fetchToursData();
-        setTours(updatedTours);
-      } catch (error) {
-        console.error("Error loading tours:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadTours();
+    fetchToursData();
   }, []);
 
+  // If loading, display the Loading component
   if (isLoading) {
     return <Loading />;
   }
