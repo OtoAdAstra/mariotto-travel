@@ -1,9 +1,11 @@
 # Mariotto travel
 
-###### Travel company webpage :airplane:
+##### Travel company webpage :airplane:
+
 
 
 #### Technologies and Frameworks used:
+###### Project is created with Vite
 
 - React.js
 - Tailwind (Tours.jsx && FilteredResult.jsx)
