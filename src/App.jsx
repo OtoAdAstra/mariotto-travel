@@ -14,7 +14,8 @@ function App() {
         style={{
           flex: "1",
           minHeight: "90vh",
-        }}>
+        }}
+        translate="no">
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
